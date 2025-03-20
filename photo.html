@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Photos et Vidéos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/photo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/cav.png" alt="Logo du cabinet">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Nos services</a></li>
+                <li><a href="photo.html">PHOTOTEQUES</a>
+                    <ul>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a href="#videos">Vidéos</a></li>
+                    </ul>
+                </li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="cntact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="Photos" class="hero">
+        <h1>Bienvenue sur notre Galerie</h1>
+        <p>Découvrez nos meilleurs moments en images et vidéos.</p>
+    </section>
+
+    <section id="galerie" class="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery-container">
+            <!-- Images -->
+            <div class="gallery-item">
+                <img src="images/obaa.jpg" alt="Image 1">
+                <div class="overlay">
+                    <p>Description de l'image 1</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/obaaa.jpg" alt="Image 2">
+                <div class="overlay">
+                    <p>Description de l'image 2</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/obaaaa.jpg ">
+                <div class="overlay">
+                    <p>Description de l'image 3</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/obab.jpg" alt="Image 4">
+                <div class="overlay">
+                    <p>Description de l'image 4</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/obbaa.jpg" alt="Image 5">
+                <div class="overlay">
+                    <p>Description de l'image 5</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/obb.jpg" alt="Image 6">
+                <div class="overlay">
+                    <p>Description de l'image 6</p>
+                </div>
+            </div>
+
+            <!-- Vidéos -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="images/vvvoba.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <div class="overlay">
+                    <p>Description de la vidéo 1</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="images/voba.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <div class="overlay">
+                    <p>Description de la vidéo 2</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="images/vvoba.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <div class="overlay">
+                    <p>Description de la vidéo 3</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <div class="overlay">
+                    <p>Description de la vidéo 4</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video5.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <div class="overlay">
+                    <p>Description de la vidéo 5</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="video6.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <div class="overlay">
+                    <p>Description de la vidéo 6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="images/cav.png" alt="Logo du cabinet" class="logo" style="width: 100%; height: 50px;">
+                <p>PASTEUR OBA professeur de theatre a la disposition dev tous les enfants otis, en dificultés pour les guerir.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Campagne</li>
+                    <li>Stratégie de contenu</li>
+                    <li>Gestion des réseaux sociaux</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-media">
+                    <a href="https://fr-fr.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="images/cross.png" alt="Twitter"></a>
+                    <a href="https://fr.linkedin.com/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Menu mobile
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    <script src="css/photo.css"></script>
+</body>
+</html>
