@@ -15,77 +15,56 @@ body {
 /* Style du header */
 /* En-tête */
 header {
-    background-color: #b0cbec;
-    color: #181515;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    animation: slideDown 0.5s ease forwards; /* Animation d'apparition */
-  }
-  
-  
-  
-  /* Navigation */
-  nav {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  /* Logo */
-  .logo img {
+}
+
+.logo img {
     height: 50px;
-    transition: transform 0.3s ease; /* Animation de transformation */
-  }
-  
-  .logo img:hover {
-    transform: rotate(360deg); /* Rotation au survol */
-  }
-  
-  /* Liens de navigation */
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: #0a0909;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease; /* Ajout d'animation de transformation */
-    position: relative;
-  }
-  
-  /* Soulignement au survol */
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #3498db;
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s ease; /* Animation de soulignement */
-  }
-  
-  .nav-links a:hover {
-    color: #3498db;
-    transform: scale(1.1); /* Agrandissement au survol */
-  }
-  
-  .nav-links a:hover::after {
-    width: 100%; /* Soulignement au survol */
-  }
+}
 
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #45a049;
+}
+
+.nav-links ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+}
+
+.nav-links li:hover > ul {
+    display: block;
+}
 
 
 /* Menu mobile */
